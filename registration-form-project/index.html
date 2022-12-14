@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id='title'>freeCodeCamp survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label for="name" id="name-label">Name <input id="name" name="name" type="text" required
+                    placeholder="Enter your name"></label>
+            <label for="email" id="email-label">Email <input id="email" name="email" type="email" required
+                    placeholder="Enter your email">
+            </label>
+            <label for="number" id="number-label">Age (optional) <input id="number" name="age" type="number" min="13"
+                    max="120" placeholder="Age">
+            </label>
+            <label for="role">Which option best describes your current role?
+                <select id="role" name="role">
+                    <option value="1"> Select a current role</option>
+                    <option value="2">Student</option>
+                    <option value="3">Full Time Job</option>
+                    <option value="4">Full Time Learner</option>
+                    <option value="5">Prefer Not To Say</option>
+                    <option value="6">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="definitely"><input id="definitely" type="checkbox" name="definitely" value="definitely"
+                    checked>Definitely</label>
+            <label for="maybe"><input id="maybe" type="checkbox" name="maybe" value="maybe">Maybe</label>
+            <label for="not-sure"><input id="not-sure" type="checkbox" name="not sure" value="not-sure">Not sure</label>
+            <label for="dropdown">What is your favourite feature of freeCodeCamp??
+                <select id="dropdown" name="favourite-feature">
+                    <option value="1"> Select an option</option>
+                    <option value="2">Challenges</option>
+                    <option value="3">Projects</option>
+                    <option value="4">Community</option>
+                    <option value="5">Open Source</option>
+                </select>
+            </label>
+        </fieldset>
+        <p class="inline">What would you like to see improved?</p>
+        <div class="minuscule">(Check all that apply)</div>
+        <fieldset id="suggested-improvements">
+            <label for="front-end"><input id="front-end" type="radio" name="suggested-improvements"
+                    value="front-end">Front End Projects</label>
+            <label for="back-end"><input id="back-end" type="radio" name="suggested-improvements"
+                    value="back-end">Back-end Projects</label>
+            <label for="data-visualization"><input id="data-visualization" type="radio" name="suggested-improvements"
+                    value="data-visualization">Data
+                Visualization</label>
+            <label for="challenges"><input id="challenges" type="radio" name="suggested-improvements"
+                    value="challenges">Challenges</label>
+            <label for="open-source"><input id="open-source" type="radio" name="suggested-improvements"
+                    value="open-source">Open Source Community</label>
+            <label for="help-rooms"><input id="help-rooms" type="radio" name="suggested-improvements"
+                    value="help-rooms">Gitter help rooms</label>
+            <label for="videos"><input id="videos" type="radio" name="suggested-improvements"
+                    value="videos">Videos</label>
+            <label for="meetups"><input id="meetups" type="radio" name="suggested-improvements" value="meetups">City
+                meetups</label>
+            <label for="wiki"><input id="wiki" type="radio" name="suggested-improvements" value="wiki">Wiki</label>
+            <label for="forum"><input id="forum" type="radio" name="suggested-improvements" value="forum">Forum</label>
+            <label for="courses"><input id="courses" type="radio" name="suggested-improvements"
+                    value="courses">Additional Courses</label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">Any comments or suggestions?
+                <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here...">
+                </textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
