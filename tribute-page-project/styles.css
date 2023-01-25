@@ -1,0 +1,40 @@
+#title {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+body {
+    font-family: Tahoma, Helvetica;
+    font-size: 14px;
+}
+
+#img-caption {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+#tribute-info {
+    padding: 10px 10px 10px 10px;
+    background-color: #f0f0f0;
+    ;
+}
+
+#appendix {
+    background-color: #f0f0f0;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+}
+
+a {
+    text-decoration: none;
+}
