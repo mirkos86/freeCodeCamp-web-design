@@ -1,5 +1,5 @@
 :root {
-    --dentoni-blue: rgb(37, 19, 81); 
+    --dentoni-blue: #251351;
     --dentoni-magenta: #ae0381;
 }
 
@@ -22,6 +22,8 @@ html {
 .image-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    justify-items: center;
 }
 
 #header-img {
@@ -36,13 +38,27 @@ html {
     height: auto;
 }
 
-#nav-bar {
+.navigator {
     display: flex;
     justify-content: center;
-    align-content: center;
     position: fixed;
+    top: 0px;
     background-color: var(--dentoni-blue);
-    font-style: var(--dentoni-magenta);
+}
+
+.nav-link {
+    font-size: 35px;
+    width: 33vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigator > ul {
+    list-style-type: none;
+    display: flex;
+    justify-items: center;
+    color: white;
 }
 
 a {
@@ -50,6 +66,54 @@ a {
 }
 
 a:visited {
+    color: white;
+}
+
+#contact-form {
+    height: auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form label {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#contact-form h2 {
+    font-size: 25px;
+    font-style: var(--dentoni-blue);
+    font-weight: bolder;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form input[type='email'] {
+    height: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: var(--dentoni-blue);
+}
+
+#form input[type='submit'] {
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: whitesmoke;
     color: var(--dentoni-magenta);
 }
 
@@ -86,27 +150,9 @@ a:visited {
     margin: 70px 0 70px 0;
 }
 
-.nav-link {
-    font-size: 35px;
-    width: 33vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-
-
 p{
     font-size: 25px;
     font-weight: bold;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-items: center;
-    color: var(--dentoni-blue);
 }
 
 iframe {
@@ -116,6 +162,14 @@ display: flex;
 justify-content: center;
 }
 
+.footer {
+    font-size: 30px;
+    color: var(--dentoni-blue);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
 
 @media (max-width:400px) {
     .logo {

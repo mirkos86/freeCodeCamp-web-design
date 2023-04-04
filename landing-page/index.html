@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://drive.google.com/uc?export=download&id=1SNlRsWTVBUooYoan-c1qWdLftSxftYuk" type="image/x-icon">
     <title>Our trademark cake</title>
@@ -23,12 +23,21 @@
             </nav>
             <div class="image-container">
                 <img id="header-img" src="crepes-sfondo-bianco.jpg" alt="Company Cake Logo">
-                <img id="header-img-logo" src="logo-dentoni-bianco.png" alt="Company Logo">
             </div>
         </div>
     </header>
 
     <main>
+        <section id="contact-form" class="sections">
+            <h2 class="pitch">Want to taste it?</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email" id="email-label">
+                <input id="email" name="email" type="email"
+                        placeholder="Give us your best email">
+                </label>
+            <input id="submit" type="submit" value="Submit">
+            </form>
+        </section>
         <div class="introduction">
         <h1 id="big-title">Dentoni and Torta Crêpes®: a Family Affair</h1>
         <p>
@@ -43,7 +52,7 @@
 
         <section id="recipe" class="sections">
             <h2 class="section-title">How it has been made for 25 years</h2>
-                <iframe id="video" height="400" src="https://www.youtube.com/shorts/U4S9X4n5KzM" allowfullscreen>
+                <iframe id="video" height="400" src="https://www.youtube.com/shorts/U4S9X4n5KzM">
                 </iframe>
         </section>
 
@@ -52,6 +61,22 @@
         </section>
     </main>
 </body>
+
+<hr>
+
+<footer class="footer">
+        <address>
+            Dentoni srl
+            Lungomare Matteotti 23 <br>
+            Torre dell'Orso<br> 
+            73026 Melendugno (LE)<br>
+            Italy <br>
+            Phone: +39 0832841485 <br>
+            Mobile: Phone: +39 3471401551 <br>
+            email: info@pasticceriadentoni.com
+        </address>
+        <img id="logo" src="logo_dentoni.jpg" alt="Company Logo">
+</footer>
 
 
 </html>
