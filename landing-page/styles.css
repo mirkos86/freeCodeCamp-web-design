@@ -8,21 +8,22 @@ html {
 }
 
 #nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--dentoni-blue);
     width: 100vw;
     position: fixed;
     top: 0;
     margin-top: 0;
     left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: var(--dentoni-blue);
+
 }
 
 #nav-bar ul {
-    list-style-type: none;
     display: flex;
     flex-direction: row;
+    list-style-type: none;
     color: white;
 }
 
@@ -44,6 +45,8 @@ a:visited {
 
 #header-img {
     margin-top: 100px;
+    margin-left: 35vw;
+    margin-right: 35vw;
     width: 30vw;
     height: auto;
 }
@@ -136,10 +139,12 @@ p{
 }
 
 iframe {
-max-width: 560px;
-width: 100%;
 display: flex;
 justify-content: center;
+max-width: 50vw;
+width: 100%;
+margin-left: 25vw;
+margin-right: 25vw;
 }
 
 .footer {
