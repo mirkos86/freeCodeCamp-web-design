@@ -1,0 +1,211 @@
+:root {
+    --dentoni-blue: #251351;
+    --dentoni-magenta: #ae0381;
+}
+
+html {
+    font-family: 'Raleway', serif;
+}
+
+
+/* Navigation section */ 
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dentoni-magenta);
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:10;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 35px;
+    width: 33vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+/* Welcome section */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 10vh,0 0 0;
+    padding: 0;
+    background-color: var(--dentoni-blue);
+}
+
+#greetings-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+}
+
+#greetings-container > h1 {
+    font-size: 50px;
+    color: white;
+}
+
+#greetings-container > h2 {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Projects section */
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 10vh, 0 0 0;
+    padding: 0; 
+    background-color: rgb(150,150,250);
+    text-align: center;
+}
+
+.projects-section-header {
+    position: relative;
+    font-size: 50px;
+    color: white;
+    max-width: 640px;
+    margin: 6rem auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: var(--main-red);
+}
+
+.btn-show-all:hover>i {
+    transform: translateX(2px);
+}
+
+.btn-show-all>i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 28.75em) {
+    .projects-section-header {
+        font-size: 4rem;
+    }
+}
+
+/* "Automagic" image grid using no media queries */
+
+.projects-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+/* Contacts section */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 10vh, 0 0 0;
+    padding: 0;
+    background-color: var(--dentoni-blue);
+}
+
+#contact-section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 2vh, 0 0 0;
+    padding: 0;
+    background-color: var(--dentoni-blue);
+}
+
+#contact-section-header > h1 {
+    font-size: 50px;
+    color: white;
+}
+
+#contact-section-header > h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 2vh, 0 0 0;
+    padding: 0; 
+}
+
+.contact-links > a {
+    font-size: 40px;
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+}
