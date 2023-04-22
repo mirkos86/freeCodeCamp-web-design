@@ -17,7 +17,6 @@ html {
     top: 0;
     margin-top: 0;
     left: 0;
-
 }
 
 #nav-bar ul {
@@ -35,11 +34,7 @@ html {
     justify-content: space-evenly;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:visited {
+.nav-link, a:visited {
     color: white;
 }
 
@@ -130,21 +125,25 @@ a:visited {
 }
 
 .sections {
-    margin: 70px 0 70px 0;
+    margin: 70px 30px 70px 30px;
 }
 
-p{
+p {
     font-size: 25px;
     font-weight: bold;
 }
 
+#news > a:visited {
+    color: black;
+}
+
 iframe {
-display: flex;
-justify-content: center;
-max-width: 50vw;
-width: 100%;
-margin-left: 25vw;
-margin-right: 25vw;
+    display: flex;
+    justify-content: center;
+    max-width: 50vw;
+    width: 100%;
+    margin-left: 25vw;
+    margin-right: 25vw;
 }
 
 .footer {
